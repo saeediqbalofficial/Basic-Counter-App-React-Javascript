@@ -4,7 +4,6 @@ import { useState } from "react";
 
 const Counter = () => {
   let [counter, setCounter] = useState(0);
-  let [zerovalue, setZeroValue] = useState(false);
 
   let increamentHandler = () => {
     setCounter(counter + 1);

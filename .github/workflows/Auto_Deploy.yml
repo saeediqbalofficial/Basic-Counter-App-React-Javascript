@@ -29,7 +29,7 @@ jobs:
           version: 12
 
       - name: install npm / yarn
-        uses: Borales/actions-yarn@v2.0.0
+        uses: Borales/actions-yarn@v2.1.0
         with:
           # The version of Node.js that will be used
           cmd: install

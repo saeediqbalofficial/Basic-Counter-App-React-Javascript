@@ -8,6 +8,7 @@ const Counter = () => {
 
   let increamentHandler = () => {
     setCounter(counter + 1);
+
     console.log("+");
   };
 

@@ -6,8 +6,7 @@ name: Auto deployement environment
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
-
+    branches: [master]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,23 +22,20 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v2-beta
         with:
-         version: 12
-        
+          version: 12
+
       - name: install npm / yarn
         uses: Borales/actions-yarn@v2.1.0
         with:
           # The version of Node.js that will be used
-              cmd: install
+          cmd: install
       - name: installing surge
         run: npm install -g surge
-        
-        #deploye on surge 
+
+        #deploye on surge
       - name: deploye on surge
         run: surge ./build http://saeed_counter_app.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
-        
-      
-        

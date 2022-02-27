@@ -30,7 +30,7 @@ jobs:
          version: 12
         
       - name: install npm / yarn
-        uses: DerYeger/yarn-setup-action@v2.1.0
+        uses: Borales/actions-yarn@v2.1.0
         with:
           # The version of Node.js that will be used
               cmd: install

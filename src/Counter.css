@@ -59,6 +59,10 @@
   .Main {
     margin-top: 0px;
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
+  }
+
+  .Button {
+    margin-bottom: 0px;
   }
 }

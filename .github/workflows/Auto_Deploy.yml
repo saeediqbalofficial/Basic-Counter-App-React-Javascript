@@ -33,6 +33,12 @@ jobs:
         with:
           # The version of Node.js that will be used
           cmd: install
+        
+        # build project with yarn
+      - name : build project on yarn
+        run: yarn build
+        
+        
       - name: installing surge
         run: npm install -g surge
 
